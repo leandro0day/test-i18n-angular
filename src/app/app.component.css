@@ -1,0 +1,61 @@
+
+.container{
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-color: #2a2a2a;
+}
+
+.neumorphic-card {
+  background-color: #2a2a2a;  /* Dark theme for the card */
+  width: 500px;
+  height: 185px;
+  border-radius: 15px;
+  box-shadow: -8px -8px 16px #3a3a3a, 8px 8px 16px #1a1a1a;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.neumorphic-header {
+  color: #ffffff;  /* White text for better readability on dark background */
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.neumorphic-input {
+  height: 30px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 15px;
+  background-color: #2a2a2a;
+  color: #ffffff;  /* White text for input */
+  box-shadow: inset -4px -4px 8px #3a3a3a, inset 4px 4px 8px #1a1a1a;
+  outline: none;
+  margin-bottom: 20px;
+}
+
+.neumorphic-btn {
+  width: 100px;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  background-color: #2a2a2a;
+  box-shadow: -4px -4px 8px #3a3a3a, 4px 4px 8px #1a1a1a;
+  color: #ffffff;  /* White text for button */
+  cursor: pointer;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.neumorphic-btn:active {
+  box-shadow: inset -4px -4px 8px #3a3a3a, inset 4px 4px 8px #1a1a1a;
+  color: #807f7f;
+}
+
+/* Placeholder color adjustment for dark theme */
+.neumorphic-input::placeholder {
+  color: #888888;
+  opacity: 1;
+}
